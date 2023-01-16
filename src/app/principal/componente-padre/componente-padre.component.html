@@ -1,0 +1,15 @@
+<section class="sectionGeneral">
+    <section class="sectionForm">
+        <h5>COMPONENTE PADRE</h5>
+        <form class="row">
+            <section class="col-6">
+                <label for="mensaje">Ingrese su mensaje:</label>
+            </section>
+            <section class="col-6">
+                <input type="text" name="mensaje" [(ngModel)]="datos_padre">
+            </section>
+        </form>
+
+        <app-componente-hijo [mensaje_padre]="datos_padre"></app-componente-hijo>        
+    </section>
+</section>
